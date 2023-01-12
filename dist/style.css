@@ -1,0 +1,100 @@
+* {
+  font-family: system-ui;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background-color: black;
+  padding: 2rem;
+  color: whitesmoke;
+  font-size: 40px;
+  align-items: center;
+}
+footer {
+  background-color: black;
+  padding: 2rem;
+  color: whitesmoke;
+}
+
+header + div {
+  display: flex;
+  flex-grow: 1;
+}
+
+aside {
+  background-color: rgb(0, 0, 0);
+  padding: 2rem;
+  color: whitesmoke;
+  border: solid black;
+}
+
+main {
+  background-color: black;
+  padding: 1rem;
+  flex-grow: 1;
+  color: aliceblue;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+li {
+  font-size: 20px;
+}
+footer img {
+  height: auto;
+  width: 30px;
+}
+.header {
+  display: flex;
+  padding: 32px;
+  font-family: sans-serif;
+  color: aliceblue;
+  justify-content: space-evenly;
+}
+.head-list {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  gap: 24px;
+}
+a:hover {
+  text-decoration: none;
+  color: #262285;
+  font-weight: bold;
+}
+main .container {
+  justify-content: center;
+}
+main img {
+  height: auto;
+  width: 500px;
+
+  border: solid 1px #f5f5f5;
+  border-radius: 4px;
+}
+main p {
+  font-size: 40px;
+}
+.album-art p {
+  padding: 400px;
+  background-color: grey;
+}
+h1 {
+  background-color: black;
+  color: white;
+  padding-top: 45px;
+  padding-bottom: 70px;
+  font-size: 60px;
+}
