@@ -1,100 +1,120 @@
-* {
-  font-family: system-ui;
-  font-size: 100%;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("./KOMIKAH_.ttf");
 }
-
 body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+  background-color: rgb(222, 241, 241);
+  position: absolute;
+  overflow: auto;
 }
-
-header {
-  background-color: black;
-  padding: 2rem;
-  color: whitesmoke;
-  font-size: 40px;
+.container {
+  height: 100rem;
+  background-color: #25283d;
+  width: 100vw;
+  position: relative;
+  display: flex;
+}
+.album img {
+  background-color: aqua;
+  width: 450px;
+  height: 450px;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 50rem;
+  top: 15rem;
+  left: 45rem;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
-footer {
-  background-color: black;
-  padding: 2rem;
-  color: whitesmoke;
-}
-
-header + div {
+.button1 img:hover {
+  width: 200px;
+  height: 250px;
   display: flex;
-  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 50rem;
+  top: 8rem;
+  left: 65rem;
+  border: none;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.button1 img {
+  width: 200px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 50rem;
+  top: 8rem;
+  left: 65rem;
+  border: none;
+  transform: rotate(-10deg);
+  cursor: pointer;
 }
 
-aside {
-  background-color: rgb(0, 0, 0);
-  padding: 2rem;
-  color: whitesmoke;
-  border: solid black;
-}
+.shows {
+  background-color: #4d81b0;
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
 
-main {
-  background-color: black;
-  padding: 1rem;
-  flex-grow: 1;
-  color: aliceblue;
+  bottom: 40rem;
 }
-ul {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-  color: aliceblue;
-}
-li {
-  font-size: 20px;
-}
-footer img {
-  height: auto;
-  width: 30px;
+.follow {
+  background-color: rgb(91, 102, 102);
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+
+  bottom: 20rem;
 }
 .header {
+  background-color: #25283d;
+  width: 100vw;
   display: flex;
-  padding: 32px;
-  font-family: sans-serif;
-  color: aliceblue;
-  justify-content: space-evenly;
-}
-.head-list {
-  display: flex;
-  font-family: Arial, Helvetica, sans-serif;
-  gap: 24px;
-}
-a:hover {
-  text-decoration: none;
-  color: #262285;
-  font-weight: bold;
-}
-main .container {
+  color: #f1faee;
+  align-items: center;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
-main img {
-  height: auto;
-  width: 500px;
-
-  border: solid 1px #f5f5f5;
-  border-radius: 4px;
+.header li {
+  font-family: "Norse-Bold";
+  font-size: xx-large;
 }
-main p {
-  font-size: 40px;
+.header ul {
+  display: flex;
+  gap: 20px;
+  text-decoration: none;
+  list-style: none;
+  margin-left: auto;
+  height: 20px;
+  font-size: 15px;
+  padding: 20px;
+  margin-right: 100px;
+  align-items: center;
 }
-.album-art p {
-  padding: 400px;
-  background-color: grey;
+.footer {
+  background-color: #2d3047;
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-family: "Norse-Bold";
 }
-h1 {
-  background-color: black;
-  color: white;
-  padding-top: 45px;
-  padding-bottom: 70px;
-  font-size: 60px;
+.container img {
 }
