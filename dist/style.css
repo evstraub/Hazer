@@ -9,7 +9,7 @@ body {
 }
 .container {
   height: 100rem;
-  background-color: #25283d;
+  background-color: #444446;
   width: 100vw;
   position: relative;
   display: flex;
@@ -38,8 +38,24 @@ body {
   top: 8rem;
   left: 65rem;
   border: none;
-  transform: rotate(45deg);
   cursor: pointer;
+  animation: shake 0.8s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+
+  50% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 .button1 img {
   width: 200px;
@@ -79,7 +95,7 @@ body {
   bottom: 20rem;
 }
 .header {
-  background-color: #25283d;
+  background-color: #000d1b;
   width: 100vw;
   display: flex;
   color: #f1faee;
@@ -93,6 +109,25 @@ body {
 .header li {
   font-family: "Norse-Bold";
   font-size: xx-large;
+}
+.header li:hover {
+  animation: shake 0.8s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+
+  50% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 .header ul {
   display: flex;
